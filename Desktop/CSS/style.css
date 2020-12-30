@@ -1,0 +1,19 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+.triangle {
+  width: 100px;
+  height: 100px;
+  border: 50px solid transparent;
+  border-top-color: blueviolet;
+  border-right-color: crimson;
+  border-left-color: goldenrod;
+  border-bottom-color: cornflowerblue;
+  
+}
