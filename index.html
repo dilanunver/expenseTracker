@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- font family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="expense-container">
+        <h1>expense tracker</h1>
+        <div class="title">
+          <h3>add a new item:</h3>
+        </div>
+        <div class="middle">
+          <form class="expense">
+            <div class="expense-box">
+              <label for="name">name:</label>
+              <input
+                type="text"
+                class="name"
+                id="tracker"
+                placeholder="Where was the expense made?"
+              />
+            </div>
+            <div style="width: 100%; display: flex;">
+              <div class="expense-box date">
+                <label for="date">date:</label>
+                <input type="date" />
+              </div>
+              <div class="expense-box amount">
+                <label for="quantity">amount:</label>
+                <input type="number" id="amount" class="amount" />
+              </div>
+            </div>
+            <div class="expense-box flex">
+              <button type="submit" class="add-btn">add expense</button>
+            </div>
+          </form>
+          <div class="info-box">
+            <div class="list">
+              <p>name</p>
+              <p>date</p>
+              <p>amount</p>
+            </div>
+            <div class="list-items">
+              <p>McDonald's</p>
+              <p>2020-09-18</p>
+              <p>$12
+                <button type="button" class="delete-btn">
+                  <i class="fas fa-times-circle"></i>
+                </button>
+              </p>
+             
+            </div>
+             
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

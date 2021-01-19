@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Spartan', sans-serif;
+  background: #ffffff;
+  color: #4b4b49;
+  line-height: 1.5;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+main {
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 1000px;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+.title h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  text-transform: capitalize;
+  color: forestgreen;
+  font-size: 1.3rem;
+  letter-spacing: 0.01rem;
+}
+.middle {
+  width: 70vw;
+}
+.expense-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.expense {
+  width: 100%;
+}
+.expense-box {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+input {
+  border-radius: 5px;
+  border: 1px solid forestgreen;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  margin-left: 0.3rem;
+}
+label {
+  color: black;
+  padding: 0.5rem 1rem;
+  font-size: 1.16rem;
+  display: inline-block;
+  width: 120px;
+  word-break: break-all;
+}
+
+input:focus {
+  outline: none;
+}
+input::placeholder{
+  font-family: 'Spartan', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.01rem;
+}
+.expense-box input {
+  width: calc(100% - 120px);
+}
+.expense-box .add-btn{
+  padding: 1rem 1.2rem;
+  width: 180px;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  background: forestgreen;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid forestgreen;
+  font-family: 'spartan', sans-serif;
+
+}
+.expense-box .add-btn:hover{
+  color: forestgreen;
+  background: #ffffff;
+  border: 1px solid forestgreen;
+  transition: all 0.3s linear;
+}
+.expense-box.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+}
+.list p, .info-box p {
+  width: 100%;
+  border: 1px solid #f0eeee;
+  border-radius: 5px;
+  padding: 0.3rem;
+  color: black;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+}
+.info-box {
+  display: flex;
+  flex-direction: column;
+}
