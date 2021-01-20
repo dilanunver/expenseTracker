@@ -84,6 +84,14 @@ input::placeholder{
 .expense-box input {
   width: calc(100% - 120px);
 }
+.expense-box .amount, .name, .date {
+  color: #4b4b49;
+  font-family: 'Spartan', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  word-break: break-all;
+
+}
 .expense-box .add-btn{
   padding: 1rem 1.2rem;
   width: 180px;
@@ -113,17 +121,17 @@ input::placeholder{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: left;
   width: 100%;
 }
-.list p, .info-box p {
+
+.info-box p {
   width: 100%;
   border: 1px solid #f0eeee;
   border-radius: 5px;
   padding: 0.3rem;
   color: black;
+  position: relative;
 }
-
 .list-items {
   display: flex;
   flex-direction: row;
@@ -131,8 +139,40 @@ input::placeholder{
   align-items: center;
   text-align: left;
   width: 100%;
+  background: #f1f0f0;
+}
+.show-items {
+  visibility: visible;
 }
 .info-box {
   display: flex;
   flex-direction: column;
 }
+.delete-btn {
+  position: absolute;
+  right: 0;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  top:0;
+  height: 100%;
+  color: #ffffff;
+  background: forestgreen;
+  cursor: pointer;
+}
+.delete-btn:focus{
+  outline: none;
+}
+.delete-btn:hover {
+  color: forestgreen;
+  background: #ffffff;
+  transition: all 0.3s linear;
+}
+.fa-times.circle {
+  color: #ffffff;
+}
+
+
+
+
+
