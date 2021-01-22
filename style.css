@@ -162,10 +162,22 @@ input::placeholder{
   background: forestgreen;
   cursor: pointer;
 }
-.delete-btn:focus, .add-btn:focus{
+.edit-btn {
+  position: absolute;
+  right: 35px;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  top: 0;
+  height: 100%;
+  color: #ffffff;
+  background: forestgreen;
+  cursor: pointer; 
+}
+.delete-btn:focus, .add-btn:focus, .edit-btn:focus{
   outline: none;
 }
-.delete-btn:hover {
+.delete-btn:hover, .edit-btn:hover {
   color: forestgreen;
   background: #ffffff;
   transition: all 0.3s linear;
@@ -173,6 +185,10 @@ input::placeholder{
 .fa-times.circle {
   color: #ffffff;
 }
+.fa-edit {
+  transform: translate(10%,-3%);
+}
+
 
 
 
